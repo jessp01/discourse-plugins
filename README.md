@@ -2,7 +2,7 @@ Plugins:
 ========
 - LinkedIn SSO
 
-Deployment:
+## Deployment:
 0. place under $DISCOURSE_BASE/plugins/
 
 1. \# rake assets:clean
