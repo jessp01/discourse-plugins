@@ -1,4 +1,4 @@
-Author: Jess Portnoy, Kaltura, Inc.
+
 
 Plugins:
 ========
@@ -13,4 +13,4 @@ Plugins:
 
 3. restart bluepill
 
-
+Author: Jess Portnoy, Kaltura, Inc.
