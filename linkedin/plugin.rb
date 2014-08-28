@@ -1,7 +1,7 @@
 # name: linkedin.com
 # about: Authenticate with discourse with linkedin.com, see more at: https://developer.linkedin.com
 # version: 0.1.0
-# author: Jess Portnoy
+# author: Jess Portnoy, Kaltura, Inc.
 
 gem 'omniauth-linkedin', '0.2.0'
 
