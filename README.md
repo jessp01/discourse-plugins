@@ -1,3 +1,5 @@
+Author: Jess Portnoy, Kaltura, Inc.
+
 Plugins:
 ========
 - LinkedIn SSO
