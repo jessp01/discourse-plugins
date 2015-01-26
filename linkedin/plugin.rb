@@ -7,8 +7,8 @@ gem 'omniauth-linkedin', '0.2.0'
 
 class LinkedInAuthenticator < ::Auth::Authenticator
   
-CLIENT_ID = ''
-  CLIENT_SECRET = ''
+CLIENT_ID = ENV['LINKEDIN_CLIENT_ID']
+  CLIENT_SECRET = ENV['LINKEDIN_CLIENT_SECRET']
   def name
     'linkedin'
   end
