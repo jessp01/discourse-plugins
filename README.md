@@ -1,18 +1,34 @@
-
-
 Plugins:
 ========
-- LinkedIn SSO
+- LinkedIn SSO for Docker with env variables
 
 ## Deployment:
-0. place under $DISCOURSE_BASE/plugins/
 
-1. set key and secret for your LinkedIn API
+1. Add plugin to your hooks in app.yml
 
-2. \# rake assets:clean
+    ```
+    hooks:
+        after_code:
+            - exec:
+                cd: $home/plugins
+                cmd:
+                    - mkdir -p plugins
+                    - git clone https://github.com/discourse/docker_manager.git
+                    - git clone https://github.com/rangedsp/discourse-plugins.git
+    ```
 
-3. \# bundle exec rake assets:precompile
+2. Add your LinkedIn Client API Key to your environmental variables
 
-4. restart bluepill
+    ```
+    env:
+        LINKEDIN\_CLIENT\_ID: xxxxxx
+        LINKEDIN\_CLIENT\_SECRET: xxxxx
+    ```
+    
+3. Rebuild container
 
-Author: Jess Portnoy, Kaltura, Inc.
+    ```
+        ./launcher rebuild app
+    ```
+
+*Original Author: Jess Portnoy, Kaltura, Inc.*
